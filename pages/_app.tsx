@@ -4,6 +4,8 @@ import 'normalize.css';
 import '~/styles/app.scss';
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
+  const isSFW = (Component as any).isSFW === true;
+
   return <Component {...pageProps} />;
 };
 export default App;
